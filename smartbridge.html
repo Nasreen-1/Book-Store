@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasreen's - Find Your Next Book</title>
+    <link rel="stylesheet" href="smartbridge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nasreen's Book Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#ebook">E-book</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#cart">My cart</a></li>
+            </ul>
+            <div class="nav-right">
+                <i class="fas fa-search"></i>
+                <span>EN <i class="fas fa-chevron-down"></i></span>
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1198&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" class="user-avatar">
+            </div>
+            <i class="fas fa-bars mobile-menu" onclick="toggleMenu()"></i>
+        </nav>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <i class="fas fa-times close-menu" onclick="toggleMenu()"></i>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#wishlist">Wishlist</a>
+        <a href="#cart">My cart</a>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Find Your<br>Next Book</h1>
+            <p>Discover a world where every page brings a new adventure.</p>
+            <button class="btn">Explore Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="book-slider-container">
+            <div class="book-slider">
+                <div class="book-card"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300" alt="Book 1"></div>
+                <div class="book-card active"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300" alt="Book 2"></div>
+                <div class="book-card"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Book 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors section -->
+    <section class="authors">
+        <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100" alt="Author">
+            <span>Author One</span>
+        </div>
+        <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=100" alt="Author">
+            <span>Author Two</span>
+        </div>
+        <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100" alt="Author">
+            <span>Author Three</span>
+        </div>
+    </section>
+
+    <!-- Recommended Books -->
+    <section class="recommended" id="shop">
+        <div class="section-header">
+            <h2>Recommended Books</h2>
+            <a href="#" class="see-all">See All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="books-grid">
+            <div class="book-item">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=300" alt="Book">
+                <h3>Book Title 1</h3>
+                <p>Author Name</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+                <div class="price">$15.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Book">
+                <h3>Book Title 2</h3>
+                <p>Author Name</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$20.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="book-item">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=300" alt="Book">
+                <h3>Book Title 1</h3>
+                <p>Author Name</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+                <div class="price">$15.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="book-item">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Book">
+                <h3>Book Title 2</h3>
+                <p>Author Name</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$20.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Reviews section -->
+    <section class="reviews" id="#reviews">
+        <div class="section-header">
+            <h2>What Our Readers Say</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100" alt="Reviewer">
+                    <div class="reviewer-info">
+                        <h4>Jane Doe</h4>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Amazing books! Highly recommended for anyone who loves adventure and fantasy genres.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100" alt="Reviewer">
+                    <div class="reviewer-info">
+                        <h4>Jane Doe</h4>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Amazing books! Highly recommended for anyone who loves adventure and fantasy genres.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100" alt="Reviewer">
+                    <div class="reviewer-info">
+                        <h4>Jane Doe</h4>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Amazing books! Highly recommended for anyone who loves adventure and fantasy genres.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Codynn Books</h3>
+                <p>Your destination for discovering amazing books. We curate the best collection to inspire and educate readers worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#about">About Us</a>
+                <a href="#shop">Shop</a>
+                <a href="#ebook">E-books</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <a href="#help">Help Center</a>
+                <a href="#shipping">Shipping Info</a>
+                <a href="#returns">Returns</a>
+                <a href="#faq">FAQ</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@paperhaven.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 9AM - 6PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Codynn Books. All rights reserved. Designed with <i class="fas fa-heart" style="color: #b8934a;"></i></p>
+        </div>
+    </footer>
+
+    <script>
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileNav.querySelectorAll('a');
+
+        function toggleMenu() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        }
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
